@@ -1,5 +1,4 @@
 'use strict';
-const path = require('path');
 
 const extensions = new Set([
 	'3dv',
@@ -117,4 +116,4 @@ const extensions = new Set([
 	'xpm'
 ]);
 
-module.exports = filePath => extensions.has(path.extname(filePath).slice(1).toLowerCase());
+module.exports = filePath => extensions.has(filePath.split('.').slice(-1)[0].toLowerCase());
