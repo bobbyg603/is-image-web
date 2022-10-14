@@ -1,5 +1,3 @@
-import path from 'node:path';
-
 const extensions = new Set([
 	'3dv',
 	'ai',
@@ -116,6 +114,6 @@ const extensions = new Set([
 	'xpm',
 ]);
 
-const isImage = filePath => extensions.has(path.extname(filePath).slice(1).toLowerCase());
+const isImage = filePath => extensions.has(filePath.split('.').at(-1).toLowerCase());
 
 export default isImage;
