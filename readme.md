@@ -1,6 +1,6 @@
 # is-image
 
-> Check if a file path is an image
+> Check if a file path is an image in a browser compatible fashion.
 
 It just checks the extension. Use [`image-type`](https://github.com/sindresorhus/image-type) if you want to check the actual file.
 
@@ -8,14 +8,14 @@ It just checks the extension. Use [`image-type`](https://github.com/sindresorhus
 ## Install
 
 ```
-$ npm install is-image
+$ npm install is-image-web
 ```
 
 
 ## Usage
 
 ```js
-const isImage = require('is-image');
+const isImage = require('is-image-web');
 
 isImage('source/unicorn.png');
 //=> true
@@ -35,4 +35,4 @@ isImage('source/unicorn.txt');
 
 ## License
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+MIT © [Bobby Galli](http://bobbyg603.com) and [Sindre Sorhus](http://sindresorhus.com)
