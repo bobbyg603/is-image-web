@@ -1,6 +1,6 @@
 {
 	"name": "is-image-web",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Check if a file path is an image in a web browser",
 	"license": "MIT",
 	"repository": "https://github.com/bobbyg603/is-image-web",
