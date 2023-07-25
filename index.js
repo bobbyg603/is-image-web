@@ -1,3 +1,5 @@
+import pathCompleteExtname from 'path-complete-extname';
+
 const extensions = new Set([
 	'3dv',
 	'ai',
@@ -114,6 +116,6 @@ const extensions = new Set([
 	'xpm',
 ]);
 
-const isImage = filePath => extensions.has(filePath.split('.').at(-1).toLowerCase());
+const isImage = filePath => extensions.has(pathCompleteExtname(filePath).slice(1).toLowerCase());
 
 export default isImage;
